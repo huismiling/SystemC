@@ -11,3 +11,9 @@
 *.lai
 *.la
 *.a
+*.sdf
+*.vcd
+
+/Debug/
+/*/Debug/
+/ipch/
