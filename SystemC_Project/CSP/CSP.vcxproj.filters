@@ -39,6 +39,27 @@
     <ClInclude Include="CSPIR.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CSPMACTimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CSPMemory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CSPMux_1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CSPMux_2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CSPRandom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CSPRFST.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CSPZeroFlag.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CSPX.cpp">
@@ -66,6 +87,27 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CSPIR.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSPMACTimer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSPMemory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSPMux_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSPMux_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSPRandom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSPRFST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSPZeroFlag.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
