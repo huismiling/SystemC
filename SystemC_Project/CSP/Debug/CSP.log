@@ -1,7 +1,7 @@
-﻿生成启动时间为 2013/8/20 11:04:53。
+﻿生成启动时间为 2013/8/20 15:49:20。
      1>项目“E:\GIT\SystemC\SystemC_Project\CSP\CSP.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
-         正在创建“Debug\CSP.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+         正在对“Debug\CSP.unsuccessfulbuild”执行 Touch 任务。
        ClCompile:
          C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\systemc-2.3.0\src" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt driver.cpp /vmg 
          driver.cpp
@@ -43,4 +43,4 @@
 
 生成成功。
 
-已用时间 00:00:03.00
+已用时间 00:00:03.49

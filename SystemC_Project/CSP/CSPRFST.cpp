@@ -6,7 +6,7 @@ void CSPRFST::prc_CSPRFST(){ /* Line 3 */
 		CSPRFST_out=0;
 	else if (Clk)
 	{
-		CSPRFST_Data=CSPRFST_in.read();
-		CSPRFST_out=CSPRFST_Data;
+		CSPRFST_out=CSPRFST_in.read();
+		//CSPRFST_out=CSPRFST_Data;
 	}
 }

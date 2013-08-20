@@ -6,7 +6,7 @@
 SC_MODULE (CSPIR) {
 	sc_in<bool> Clk, Rst, Encspir;
 	sc_in< sc_uint<8> > CSPIR_in;
-	sc_out< sc_uint<8> > Instruction;
+	sc_out< sc_uint<8> > CSPIR_out;
 
 	void prc_CSPIR ();
 

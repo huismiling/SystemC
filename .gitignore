@@ -14,5 +14,4 @@
 *.sdf
 
 /*/Debug/
-/*/*/Dubug/
-/*/ipch/
+/*/*/Debug/
