@@ -1,0 +1,17 @@
+#include "systemc.h"
+#include "CSPCTRL.h"
+#include "CSPIR.h"
+#include "CSPMACTimer.h"
+#include "CSPMemory.h"
+#include "CSPMux_1.h"
+#include "CSPMux_2.h"
+#include "CSPPC.h"
+#include "CSPRandom.h"
+#include "CSPRFST.h"
+#include "CSPT.h"
+#include "CSPX.h"
+#include "CSPY.h"
+#include "CSPZ.h"
+#include "CSPZeroFlag.h"
+
+

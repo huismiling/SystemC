@@ -12,7 +12,7 @@ SC_MODULE (CSPX) {
 
 	SC_CTOR (CSPX) {
 		SC_METHOD (prc_CSPX);
-		sensitive << Clk << Rst;
+		sensitive_pos << Clk << Rst;
 	}
 };
 

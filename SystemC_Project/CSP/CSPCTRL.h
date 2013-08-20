@@ -12,7 +12,7 @@ SC_MODULE (CSPCTRL) {
 
 	SC_CTOR (CSPCTRL) {
 		SC_METHOD (prc_CSPCTRL);
-		sensitive << Clk << Rst;
+		sensitive_pos << Clk << Rst;
 	}
 };
 

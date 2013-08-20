@@ -14,6 +14,6 @@ void CSPZ::prc_CSPZ () { /* Line 3 */
 			CSPZ_Data=CSPZ_in.read();
 		else if (Decz)
 			CSPZ_Data=CSPZ_Data-1;
+		CSPZ_out=CSPZ_Data;
 	}
-	CSPZ_out=CSPZ_Data;
 }

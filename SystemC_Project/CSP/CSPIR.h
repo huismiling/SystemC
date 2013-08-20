@@ -12,7 +12,7 @@ SC_MODULE (CSPIR) {
 
 	SC_CTOR (CSPIR) {
 		SC_METHOD (prc_CSPIR);
-		sensitive << Clk << Rst;
+		sensitive_pos << Clk << Rst;
 	}
 };
 

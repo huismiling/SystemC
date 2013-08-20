@@ -7,7 +7,7 @@ void CSPMACtimer::prc_CSPMACtimer(){ /* Line 3 */
 		cou=0;
 		CSPMACOFECou_Data=0;
 	}
-	else if (Clk)
+	else
 	{
 		if(Enmactimer)
 		{
@@ -17,6 +17,7 @@ void CSPMACtimer::prc_CSPMACtimer(){ /* Line 3 */
 				cou=0;
 				CSPMACOFECou_Data++;
 			}
+			OFECou=CSPMACOFECou_Data;
 		}
 		else
 		{
@@ -24,5 +25,4 @@ void CSPMACtimer::prc_CSPMACtimer(){ /* Line 3 */
 			CSPMACOFECou_Data=0;
 		}
 	}
-	OFECou=CSPMACOFECou_Data;
 }

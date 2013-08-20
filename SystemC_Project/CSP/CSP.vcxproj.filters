@@ -18,9 +18,6 @@
     <ClInclude Include="CSPX.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="driver.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="CSPY.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -58,6 +55,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="CSPZeroFlag.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="driver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IncludeFiles.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

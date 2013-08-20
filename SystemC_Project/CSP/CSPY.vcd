@@ -1,0 +1,451 @@
+$date
+     Aug 20, 2013       11:04:56
+$end
+
+$version
+              SystemC 2.3.0-ASI --- Aug 19 2013 15:21:00
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$var wire    8  aaa  CSPY_out [7:0]  $end
+$var wire    8  aab  CSPY_in [7:0]  $end
+$var wire    1  aac  Decy       $end
+$var wire    1  aad  Incy       $end
+$var wire    1  aae  Encspy       $end
+$var wire    1  aaf  Rst       $end
+$var wire    1  aag  Clk       $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+b0 aaa
+b0 aab
+0aac
+0aad
+0aae
+1aaf
+0aag
+$end
+
+#10000
+0aaf
+1aag
+
+#15000
+b11111 aab
+0aag
+
+#20000
+1aag
+
+#25000
+b10101110 aab
+1aac
+1aae
+0aag
+
+#30000
+b10101110 aaa
+1aag
+
+#35000
+b11001100 aab
+0aae
+0aag
+
+#40000
+b11111111 aaa
+1aag
+
+#45000
+b1000001 aab
+1aae
+0aag
+
+#50000
+b1000001 aaa
+1aag
+
+#55000
+b1100000 aab
+0aae
+0aag
+
+#60000
+b11111111 aaa
+1aag
+
+#65000
+b10000 aab
+1aae
+0aag
+
+#70000
+b10000 aaa
+1aag
+
+#75000
+b11110100 aab
+0aae
+0aag
+
+#80000
+b11111111 aaa
+1aag
+
+#85000
+b10010 aab
+1aae
+0aag
+
+#90000
+b10010 aaa
+1aag
+
+#95000
+b1100110 aab
+0aae
+0aag
+
+#100000
+b11111111 aaa
+1aag
+
+#105000
+b111010 aab
+0aag
+
+#110000
+1aag
+
+#115000
+b1001101 aab
+1aae
+0aag
+
+#120000
+b1001101 aaa
+1aag
+
+#125000
+b11 aab
+0aag
+
+#130000
+b11 aaa
+1aag
+
+#135000
+b110010 aab
+0aag
+
+#140000
+b110010 aaa
+1aag
+
+#145000
+b1001101 aab
+0aae
+0aag
+
+#150000
+b11111111 aaa
+1aag
+
+#155000
+b11111101 aab
+0aag
+
+#160000
+1aag
+
+#165000
+b1100111 aab
+1aae
+0aag
+
+#170000
+b1100111 aaa
+1aag
+
+#175000
+b10101101 aab
+0aag
+
+#180000
+b10101101 aaa
+1aag
+
+#185000
+b1101101 aab
+0aag
+
+#190000
+b1101101 aaa
+1aag
+
+#195000
+b1001100 aab
+0aag
+
+#200000
+b1001100 aaa
+1aag
+
+#205000
+b11010100 aab
+0aag
+
+#210000
+b11010100 aaa
+1aag
+
+#215000
+b100010 aab
+0aae
+0aag
+
+#220000
+b11111111 aaa
+1aag
+
+#225000
+b1000011 aab
+1aae
+0aag
+
+#230000
+b1000011 aaa
+1aag
+
+#235000
+b101010 aab
+0aag
+
+#240000
+b101010 aaa
+1aag
+
+#245000
+b10100100 aab
+0aag
+
+#250000
+b10100100 aaa
+1aag
+
+#255000
+b11000010 aab
+0aae
+0aag
+
+#260000
+b11111111 aaa
+1aag
+
+#265000
+b1111100 aab
+1aae
+0aag
+
+#270000
+b1111100 aaa
+1aag
+
+#275000
+b10100110 aab
+0aae
+0aag
+
+#280000
+b11111111 aaa
+1aag
+
+#285000
+b1110111 aab
+0aag
+
+#290000
+1aag
+
+#295000
+b11111 aab
+1aae
+0aag
+
+#300000
+b11111 aaa
+1aag
+
+#305000
+b1001000 aab
+0aae
+0aag
+
+#310000
+b11111111 aaa
+1aag
+
+#315000
+b1111000 aab
+0aag
+
+#320000
+1aag
+
+#325000
+b10101111 aab
+1aae
+0aag
+
+#330000
+b10101111 aaa
+1aag
+
+#335000
+b10110010 aab
+0aae
+0aag
+
+#340000
+b11111111 aaa
+1aag
+
+#345000
+b11011011 aab
+0aag
+
+#350000
+1aag
+
+#355000
+b1111001 aab
+0aag
+
+#360000
+1aag
+
+#365000
+b11110011 aab
+1aae
+0aag
+
+#370000
+b11110011 aaa
+1aag
+
+#375000
+b1010110 aab
+0aag
+
+#380000
+b1010110 aaa
+1aag
+
+#385000
+b11110000 aab
+0aae
+0aag
+
+#390000
+b11111111 aaa
+1aag
+
+#395000
+b100101 aab
+1aae
+0aag
+
+#400000
+b100101 aaa
+1aag
+
+#405000
+b10101101 aab
+0aag
+
+#410000
+b10101101 aaa
+1aag
+
+#415000
+b11001010 aab
+0aag
+
+#420000
+b11001010 aaa
+1aag
+
+#425000
+b1000001 aab
+0aag
+
+#430000
+b1000001 aaa
+1aag
+
+#435000
+b100000 aab
+0aag
+
+#440000
+b100000 aaa
+1aag
+
+#445000
+b10001100 aab
+0aae
+0aag
+
+#450000
+b11111111 aaa
+1aag
+
+#455000
+b110010 aab
+1aae
+0aag
+
+#460000
+b110010 aaa
+1aag
+
+#465000
+b10000 aab
+0aae
+0aag
+
+#470000
+b11111111 aaa
+1aag
+
+#475000
+b10101110 aab
+1aae
+0aag
+
+#480000
+b10101110 aaa
+1aag
+
+#485000
+b10 aab
+0aag
+
+#490000
+b10 aaa
+1aag
+
+#495000
+b10010110 aab
+0aae
+0aag
+

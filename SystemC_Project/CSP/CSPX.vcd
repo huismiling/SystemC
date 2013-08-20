@@ -1,0 +1,181 @@
+$date
+     Aug 20, 2013       10:00:57
+$end
+
+$version
+              SystemC 2.3.0-ASI --- Aug 19 2013 15:21:00
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$var wire    8  aaa  CSPX_out [7:0]  $end
+$var wire    8  aab  CSPX_in [7:0]  $end
+$var wire    1  aac  Encspx       $end
+$var wire    1  aad  Rst       $end
+$var wire    1  aae  Clk       $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+b0 aaa
+b0 aab
+0aac
+1aad
+0aae
+$end
+
+#10000
+0aad
+1aae
+
+#15000
+b101001 aab
+0aae
+
+#20000
+1aae
+
+#25000
+b10111110 aab
+1aac
+0aae
+
+#30000
+b10111110 aaa
+1aae
+
+#35000
+b11100001 aab
+0aac
+0aae
+
+#40000
+1aae
+
+#45000
+b11010110 aab
+0aae
+
+#50000
+1aae
+
+#55000
+b1010010 aab
+0aae
+
+#60000
+1aae
+
+#65000
+b1001001 aab
+0aae
+
+#70000
+1aae
+
+#75000
+b11110001 aab
+1aac
+0aae
+
+#80000
+b11110001 aaa
+1aae
+
+#85000
+b11101001 aab
+0aae
+
+#90000
+b11101001 aaa
+1aae
+
+#95000
+b10110011 aab
+0aae
+
+#100000
+b10110011 aaa
+1aae
+
+#105000
+b11011011 aab
+0aac
+0aae
+
+#110000
+1aae
+
+#115000
+b10000111 aab
+0aae
+
+#120000
+1aae
+
+#125000
+b111110 aab
+0aae
+
+#130000
+1aae
+
+#135000
+b100100 aab
+1aac
+0aae
+
+#140000
+b100100 aaa
+1aae
+
+#145000
+b1101 aab
+0aac
+0aae
+
+#150000
+1aae
+
+#155000
+b110 aab
+0aae
+
+#160000
+1aae
+
+#165000
+b1000111 aab
+1aac
+0aae
+
+#170000
+b1000111 aaa
+1aae
+
+#175000
+b10110011 aab
+0aac
+0aae
+
+#180000
+1aae
+
+#185000
+b1001101 aab
+0aae
+
+#190000
+1aae
+
+#195000
+b1000011 aab
+0aae
+

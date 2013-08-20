@@ -8,12 +8,12 @@ void CSPT::prc_CSPT () { /* Line 3 */
 		CSPT_out=0;
 		CSPT_Data=0;
 	}
-	else if (Clk)
+	else
 	{
 		if (Encspt)
 			CSPT_Data=CSPT_in.read();
 		else if (Dect)
 			CSPT_Data=CSPT_Data-1;
+		CSPT_out=CSPT_Data;
 	}
-	CSPT_out=CSPT_Data;
 }
