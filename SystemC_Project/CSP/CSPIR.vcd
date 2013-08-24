@@ -1,0 +1,336 @@
+$comment
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+$end
+
+$date 
+  08/20/2013 15:37:35 
+$end
+$version 
+ QUARTUS_VCD_EXPORT 1.0 
+$end
+$timescale
+  1 ps
+$end
+$scope module SystemC $end
+$var reg 8 ! CSPIR_out[7:0] $end
+$var reg 8 " CSPIR_in[7:0] $end
+$var reg 1 # Encspir $end
+$var reg 1 $ Rst $end
+$var reg 1 % Clk $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b0 "
+0#
+1$
+0%
+$end
+#10000
+0$
+1%
+#15000
+b1001101 "
+0%
+#20000
+1%
+#25000
+b11111 "
+1#
+0%
+#30000
+b11111 !
+1%
+#35000
+b1011 "
+0%
+#40000
+b1011 !
+1%
+#45000
+b1101 "
+0%
+#50000
+b1101 !
+1%
+#55000
+b11000000 "
+0#
+0%
+#60000
+1%
+#65000
+b1111010 "
+1#
+0%
+#70000
+b1111010 !
+1%
+#75000
+b10100000 "
+0%
+#80000
+b10100000 !
+1%
+#85000
+b10011000 "
+0%
+#90000
+b10011000 !
+1%
+#95000
+b1011111 "
+0%
+#100000
+b1011111 !
+1%
+#105000
+b10010110 "
+0#
+0%
+#110000
+1%
+#115000
+b10101 "
+0%
+#120000
+1%
+#125000
+b11110111 "
+0%
+#130000
+1%
+#135000
+b11101111 "
+1#
+0%
+#140000
+b11101111 !
+1%
+#145000
+b10000011 "
+0#
+0%
+#150000
+1%
+#155000
+b11011011 "
+1#
+0%
+#160000
+b11011011 !
+1%
+#165000
+b11011111 "
+0%
+#170000
+b11011111 !
+1%
+#175000
+b10010111 "
+0#
+0%
+#180000
+1%
+#185000
+b1111 "
+0%
+#190000
+1%
+#195000
+b11000010 "
+1#
+0%
+#200000
+b11000010 !
+1%
+#205000
+b1110011 "
+0%
+#210000
+b1110011 !
+1%
+#215000
+b11100110 "
+0#
+0%
+#220000
+1%
+#225000
+b11111001 "
+0%
+#230000
+1%
+#235000
+b10010111 "
+1#
+0%
+#240000
+b10010111 !
+1%
+#245000
+b10011011 "
+0%
+#250000
+b10011011 !
+1%
+#255000
+b10011 "
+0#
+0%
+#260000
+1%
+#265000
+b1100101 "
+0%
+#270000
+1%
+#275000
+b1101 "
+1#
+0%
+#280000
+b1101 !
+1%
+#285000
+b10010100 "
+0%
+#290000
+b10010100 !
+1%
+#295000
+b10000101 "
+0#
+0%
+#300000
+1%
+#305000
+b10010000 "
+1#
+0%
+#310000
+b10010000 !
+1%
+#315000
+b11011111 "
+0%
+#320000
+b11011111 !
+1%
+#325000
+b11001001 "
+0%
+#330000
+b11001001 !
+1%
+#335000
+b10010100 "
+0#
+0%
+#340000
+1%
+#345000
+b11000101 "
+1#
+0%
+#350000
+b11000101 !
+1%
+#355000
+b110100 "
+0#
+0%
+#360000
+1%
+#365000
+b11100010 "
+1#
+0%
+#370000
+b11100010 !
+1%
+#375000
+b10001111 "
+0%
+#380000
+b10001111 !
+1%
+#385000
+b10010000 "
+0%
+#390000
+b10010000 !
+1%
+#395000
+b1000011 "
+0#
+0%
+#400000
+1%
+#405000
+b11011 "
+1#
+0%
+#410000
+b11011 !
+1%
+#415000
+b11111111 "
+0#
+0%
+#420000
+1%
+#425000
+b110011 "
+0%
+#430000
+1%
+#435000
+b111000 "
+0%
+#440000
+1%
+#445000
+b11010111 "
+0%
+#450000
+1%
+#455000
+b101011 "
+1#
+0%
+#460000
+b101011 !
+1%
+#465000
+b111 "
+0#
+0%
+#470000
+1%
+#475000
+b1000 "
+0%
+#480000
+1%
+#485000
+b100010 "
+1#
+0%
+#490000
+b1110110 !
+1%
+#495000

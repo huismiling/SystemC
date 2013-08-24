@@ -12,7 +12,7 @@ SC_MODULE (CSPY) {
 
 	SC_CTOR (CSPY) {
 		SC_METHOD (prc_CSPY);
-		sensitive << Clk << Rst;
+		sensitive_pos << Clk << Rst;
 	}
 };
 

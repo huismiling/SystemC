@@ -12,8 +12,6 @@
 *.la
 *.a
 *.sdf
-*.vcd
 
-/Debug/
 /*/Debug/
-/ipch/
+/*/*/Debug/

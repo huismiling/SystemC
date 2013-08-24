@@ -76,21 +76,36 @@
   <ItemGroup>
     <ClInclude Include="CSPCTRL.h" />
     <ClInclude Include="CSPIR.h" />
+    <ClInclude Include="CSPMACTimer.h" />
+    <ClInclude Include="CSPMemory.h" />
+    <ClInclude Include="CSPMux_1.h" />
+    <ClInclude Include="CSPMux_2.h" />
+    <ClInclude Include="CSPRandom.h" />
+    <ClInclude Include="CSPRFST.h" />
     <ClInclude Include="CSPT.h" />
     <ClInclude Include="CSPX.h" />
     <ClInclude Include="CSPY.h" />
     <ClInclude Include="CSPZ.h" />
-    <ClInclude Include="driver.h" />
+    <ClInclude Include="CSPZeroFlag.h" />
     <ClInclude Include="CSPPC.h" />
+    <ClInclude Include="driver.h" />
+    <ClInclude Include="IncludeFiles.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CSPCTRL.cpp" />
     <ClCompile Include="CSPIR.cpp" />
+    <ClCompile Include="CSPMACTimer.cpp" />
+    <ClCompile Include="CSPMemory.cpp" />
+    <ClCompile Include="CSPMux_1.cpp" />
+    <ClCompile Include="CSPMux_2.cpp" />
     <ClCompile Include="CSPPC.cpp" />
+    <ClCompile Include="CSPRandom.cpp" />
+    <ClCompile Include="CSPRFST.cpp" />
     <ClCompile Include="CSPT.cpp" />
     <ClCompile Include="CSPX.cpp" />
     <ClCompile Include="CSPY.cpp" />
     <ClCompile Include="CSPZ.cpp" />
+    <ClCompile Include="CSPZeroFlag.cpp" />
     <ClCompile Include="driver.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

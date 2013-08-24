@@ -6,14 +6,14 @@ void CSPT::prc_CSPT () { /* Line 3 */
 	if(Rst)
 	{
 		CSPT_out=0;
-		CSPT_Data=0;
+		//CSPT_Data=0;
 	}
-	else if (Clk)
+	else
 	{
 		if (Encspt)
-			CSPT_Data=CSPT_in.read();
+			CSPT_out=CSPT_in.read();
 		else if (Dect)
-			CSPT_Data=CSPT_Data-1;
+			CSPT_out=CSPT_out.read()-1;
+		//CSPT_out=CSPT_Data;
 	}
-	CSPT_out=CSPT_Data;
 }

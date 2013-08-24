@@ -12,7 +12,7 @@ SC_MODULE (CSPZ) {
 
 	SC_CTOR (CSPZ) {
 		SC_METHOD (prc_CSPZ);
-		sensitive << Clk << Rst;
+		sensitive_pos << Clk << Rst;
 	}
 };
 
