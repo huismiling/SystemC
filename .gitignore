@@ -12,6 +12,7 @@
 *.la
 *.a
 *.sdf
+*.suo
 
 /*/Debug/
 /*/*/Debug/
