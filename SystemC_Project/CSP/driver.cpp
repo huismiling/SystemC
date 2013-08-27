@@ -15,9 +15,9 @@ void driver::prc_driver () {
 		Clk=!Clk;
 		wait (5, SC_NS);
 		PC_S=rand()%8;
-		Inc=rand()%2;
-		Dec=rand()%2;
-		En=rand()%2;
+		//Inc=rand()%2;
+		//Dec=rand()%2;
+		//En=rand()%2;
 		d_out=d_out.read()+1;//rand()%256;
 	}
 }

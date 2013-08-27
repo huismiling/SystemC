@@ -1,11 +1,11 @@
 #include "CSPMACTimer.h"              /* Line 2 */
 
 void CSPMACtimer::prc_CSPMACtimer(){ /* Line 3 */
-	sc_uint<8> CSPMACOFECou_Data;
-	sc_uint<8> cou;
+	//sc_uint<8> CSPMACOFECou_Data;
+	
 	if(Rst){
 		cou=0;
-		CSPMACOFECou_Data=0;
+		OFECou=0;
 	}
 	else
 	{
@@ -15,14 +15,14 @@ void CSPMACtimer::prc_CSPMACtimer(){ /* Line 3 */
 			if (cou>=19)
 			{
 				cou=0;
-				CSPMACOFECou_Data++;
+				OFECou=OFECou.read()+1;
 			}
-			OFECou=CSPMACOFECou_Data;
+			//OFECou=CSPMACOFECou_Data;
 		}
 		else
 		{
 			cou=0;
-			CSPMACOFECou_Data=0;
+			OFECou=0;
 		}
 	}
 }
