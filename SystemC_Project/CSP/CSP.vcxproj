@@ -74,6 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CSPControl.h" />
     <ClInclude Include="CSPCTRL.h" />
     <ClInclude Include="CSPIR.h" />
     <ClInclude Include="CSPMACTimer.h" />
@@ -92,6 +93,7 @@
     <ClInclude Include="IncludeFiles.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CSPControl.cpp" />
     <ClCompile Include="CSPCTRL.cpp" />
     <ClCompile Include="CSPIR.cpp" />
     <ClCompile Include="CSPMACTimer.cpp" />

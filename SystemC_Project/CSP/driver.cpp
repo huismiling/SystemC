@@ -8,16 +8,16 @@ void driver::prc_driver () {
 	Rst=0;
 	Clk=1;
 	wait (5, SC_NS);
-	d_out=0;//rand()%256;
+	d_out8=0;//rand()%256;
 	while (1) {
 		Clk=!Clk;
 		wait (5, SC_NS);
 		Clk=!Clk;
 		wait (5, SC_NS);
-		PC_S=rand()%8;
+		d_out3=rand()%8;
 		//Inc=rand()%2;
 		//Dec=rand()%2;
 		//En=rand()%2;
-		d_out=d_out.read()+1;//rand()%256;
+		d_out8=d_out8.read()+1;//rand()%256;
 	}
 }

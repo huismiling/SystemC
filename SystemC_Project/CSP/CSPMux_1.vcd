@@ -1,0 +1,126 @@
+$date
+     Aug 31, 2013       09:42:51
+$end
+
+$version
+              SystemC 2.3.0-ASI --- Aug 24 2013 20:12:54
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$var wire    8  aaa  CSPMux_1_out [7:0]  $end
+$var wire    8  aab  CSPX_out [7:0]  $end
+$var wire    8  aac  CSPY_out [7:0]  $end
+$var wire    8  aad  CSPZ_out [7:0]  $end
+$var wire    8  aae  CSPT_out [7:0]  $end
+$var wire    8  aaf  CSPCTRL_out [7:0]  $end
+$var wire    8  aag  CSPPC_out [7:0]  $end
+$var wire    8  aah  CSPRFST_out [7:0]  $end
+$var wire    3  aai  Selmux_1 [2:0]  $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+b0 aaa
+b0 aab
+b0 aac
+b0 aad
+b0 aae
+b0 aaf
+b0 aag
+b0 aah
+b0 aai
+$end
+
+#25000
+b1 aaa
+b1 aab
+b1 aac
+b1 aad
+b1 aae
+b1 aaf
+b1 aag
+b1 aah
+b10 aai
+
+#35000
+b10 aaa
+b10 aab
+b10 aac
+b10 aad
+b10 aae
+b10 aaf
+b10 aag
+b10 aah
+
+#45000
+b11 aaa
+b11 aab
+b11 aac
+b11 aad
+b11 aae
+b11 aaf
+b11 aag
+b11 aah
+b0 aai
+
+#55000
+b100 aaa
+b100 aab
+b100 aac
+b100 aad
+b100 aae
+b100 aaf
+b100 aag
+b100 aah
+b11 aai
+
+#65000
+b101 aaa
+b101 aab
+b101 aac
+b101 aad
+b101 aae
+b101 aaf
+b101 aag
+b101 aah
+
+#75000
+b110 aaa
+b110 aab
+b110 aac
+b110 aad
+b110 aae
+b110 aaf
+b110 aag
+b110 aah
+b110 aai
+
+#85000
+b111 aaa
+b111 aab
+b111 aac
+b111 aad
+b111 aae
+b111 aaf
+b111 aag
+b111 aah
+
+#95000
+b1000 aaa
+b1000 aab
+b1000 aac
+b1000 aad
+b1000 aae
+b1000 aaf
+b1000 aag
+b1000 aah
+b10 aai
+
