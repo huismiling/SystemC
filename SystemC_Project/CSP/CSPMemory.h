@@ -8,8 +8,6 @@ SC_MODULE (CSPMemory) {
 	sc_in< sc_uint<8> > MEM_Address;
 	sc_out< sc_uint<8> > Memory_out;
 
-
-
 	void prc_CSPMemory ();
 
 	SC_CTOR (CSPMemory) {
