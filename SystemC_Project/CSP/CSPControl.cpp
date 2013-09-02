@@ -168,12 +168,10 @@ void CSPControl::prc_CSPControl2(){
 		Dect=i[22];
 		Encspctrl=i[21];
 		Enpc=i[20];
-		Encspy=i[28];
-		Encspy=i[28];
 		S=i.read().range(19,17);//(i[19],i[18],i[17]);
 		Enir=i[16];
 		Selmux_1=i.read().range(15,13);
-		Enir=i[12];
+		MEM_Read=i[12];
 		Selmux_2=i.read().range(11,10);
 		Enmactimer=i[9];
 		Txcaln=i[8];

@@ -66,6 +66,9 @@
     <ClInclude Include="CSPControl.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CSPTOP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CSPX.cpp">
@@ -117,6 +120,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CSPControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CSPTOP.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

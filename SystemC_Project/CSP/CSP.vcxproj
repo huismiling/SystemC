@@ -84,6 +84,7 @@
     <ClInclude Include="CSPRandom.h" />
     <ClInclude Include="CSPRFST.h" />
     <ClInclude Include="CSPT.h" />
+    <ClInclude Include="CSPTOP.h" />
     <ClInclude Include="CSPX.h" />
     <ClInclude Include="CSPY.h" />
     <ClInclude Include="CSPZ.h" />
@@ -104,6 +105,7 @@
     <ClCompile Include="CSPRandom.cpp" />
     <ClCompile Include="CSPRFST.cpp" />
     <ClCompile Include="CSPT.cpp" />
+    <ClCompile Include="CSPTOP.cpp" />
     <ClCompile Include="CSPX.cpp" />
     <ClCompile Include="CSPY.cpp" />
     <ClCompile Include="CSPZ.cpp" />
