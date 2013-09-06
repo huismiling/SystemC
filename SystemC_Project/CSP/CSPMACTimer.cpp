@@ -1,6 +1,6 @@
 #include "CSPMACTimer.h"              /* Line 2 */
 
-void CSPMACtimer::prc_CSPMACtimer(){ /* Line 3 */
+void CSPMACTimer::prc_CSPMACtimer(){ /* Line 3 */
 	//sc_uint<8> CSPMACOFECou_Data;
 	
 	if(Rst){

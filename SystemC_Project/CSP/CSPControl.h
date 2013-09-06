@@ -10,9 +10,9 @@ SC_MODULE (CSPControl) {
 	sc_out< sc_uint<3> > S, Selmux_1;
 	sc_out< sc_uint<2> > Selmux_2;
 	sc_out<bool> Txcaln, Txon, Txoncca, ackset, Txoff, flush_tx, Rxon, Rxoff, flush_rx;
-	sc_out< sc_uint<30> > i;
+	sc_out< sc_uint<32> > i;
 
-	sc_uint<4> W;
+	sc_signal<sc_uint<4> > W;
 	sc_bit Clk_en;
 	sc_bit S_IS;
 

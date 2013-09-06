@@ -11,6 +11,7 @@ SC_MODULE (CSPTOP) {
 	sc_in< sc_uint<16> > Random_in;
 	sc_out<bool> Txcaln, Txon, Txoncca, ackset, Txoff, flush_tx, Rxon, Rxoff, flush_rx;
 	sc_out< sc_uint<8> > MUX;
+	sc_out< sc_uint<32> > i;
 
 	sc_signal<bool> Encspx, Encspy, Incy, Decy, Encspz, Decz, Encspt, Dect, Encspctrl, Enpc, Enir, MEM_Read, Enmactimer, CSPC_out;
 	sc_signal<sc_uint<3> > S, CSPSelmux_1;
@@ -106,7 +107,7 @@ SC_MODULE (CSPTOP) {
 		RFST.CSPRFST_out(RFST_out);
 
 		Mux_1.Selmux_1(CSPSelmux_1);
-		Mux_1.CSPCTRL_out(CSPCTRL_out);
+		Mux_1.CSPRFST_out(RFST_out);
 		Mux_1.CSPPC_out(CSPPC_out);
 		Mux_1.CSPCTRL_out(CSPCTRL_out);
 		Mux_1.CSPT_out(CSPT_out);
@@ -132,7 +133,7 @@ SC_MODULE (CSPTOP) {
 		Mux_2.CSPMux_2_out(MUX);
 
 		Zeroflag.CSPZ_out(CSPZ_out);
-		Zeroflag.IR((CSPIR_out[3],CSPIR_out[2],CSPIR_out[1],CSPIR_out[0]));
+		Zeroflag.IR(CSPIR_out);
 		Zeroflag.Tx_Active(Tx_Active);
 		Zeroflag.CCA_Active(CCA_Active);
 		Zeroflag.CSPC_out(CSPC_out);
@@ -149,6 +150,7 @@ SC_MODULE (CSPTOP) {
 		Control.MUX(MUX);
 		Control.C_out(CSPC_out);
 
+		Control.i(i);
 		Control.Encspx(Encspx);
 		Control.Encspy(Encspy);
 		Control.Incy(Incy);
