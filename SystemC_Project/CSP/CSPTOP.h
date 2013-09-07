@@ -151,7 +151,7 @@ SC_MODULE (CSPTOP) {
 		Control.C_out(CSPC_out);
 
 		Control.i(i);
-		Control.Encspx(Encspx);
+		/*Control.Encspx(Encspx);
 		Control.Encspy(Encspy);
 		Control.Incy(Incy);
 		Control.Decy(Decy);
@@ -175,7 +175,7 @@ SC_MODULE (CSPTOP) {
 		Control.flush_tx(flush_tx);
 		Control.Rxon(Rxon);
 		Control.Rxoff(Rxoff);
-		Control.flush_rx(flush_rx);
+		Control.flush_rx(flush_rx);*/
 
 		SC_METHOD(topmethod)
 			sensitive_pos<< Clk <<Rst;

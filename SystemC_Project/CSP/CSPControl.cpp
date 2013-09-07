@@ -159,7 +159,7 @@ void CSPControl::prc_CSPControl2(){
 				}
 			}//W[3]
 		}
-		Encspx		=i[29];
+		/*Encspx		=i[29];
 		Encspy		=i[28];
 		Incy		=i[27];
 		Decy		=i[26];
@@ -183,6 +183,6 @@ void CSPControl::prc_CSPControl2(){
 		flush_tx	=i[3];
 		Rxon		=i[2];
 		Rxoff		=i[1];
-		flush_rx	=i[0];
+		flush_rx	=i[0];*/
 	}
 }

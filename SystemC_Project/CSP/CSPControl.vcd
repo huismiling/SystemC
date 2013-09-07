@@ -1,0 +1,101 @@
+$date
+     Sep 07, 2013       20:08:14
+$end
+
+$version
+              SystemC 2.3.0-ASI --- Aug 24 2013 20:12:54
+$end
+
+$timescale
+     1 ps
+$end
+
+$scope module SystemC $end
+$var wire   32  aaa  i [31:0]  $end
+$var wire    8  aab  MUX [7:0]  $end
+$var wire    8  aac  Instruction [7:0]  $end
+$var wire    8  aad  Tx_Active [7:0]  $end
+$var wire    1  aae  C_out       $end
+$var wire    1  aaf  Rst       $end
+$var wire    1  aag  Clk       $end
+$upscope $end
+$enddefinitions  $end
+
+$comment
+All initial values are dumped below at time 0 sec = 0 timescale units.
+$end
+
+$dumpvars
+b10000010000000000 aaa
+b100 aab
+b0 aac
+b11 aad
+0aae
+1aaf
+0aag
+$end
+
+#10000
+b11100000 aac
+0aaf
+
+#15000
+1aag
+
+#20000
+b1110110000000000 aaa
+0aag
+
+#25000
+b10111010 aac
+1aae
+1aag
+
+#30000
+b10000010000000000 aaa
+0aag
+
+#35000
+1aag
+
+#40000
+0aag
+
+#45000
+0aae
+1aag
+
+#50000
+0aag
+
+#55000
+b10111011 aac
+1aae
+1aag
+
+#60000
+0aag
+
+#65000
+1aag
+
+#70000
+0aag
+
+#75000
+1aag
+
+#80000
+0aag
+
+#85000
+1aag
+
+#90000
+0aag
+
+#95000
+b100010 aac
+0aae
+1aag
+

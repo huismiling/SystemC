@@ -10,7 +10,7 @@ int sc_main(int, char**){
 	sc_signal< sc_uint<32> > i;
 
 	sc_signal<bool> Encspx, Encspy, Incy, Decy, Encspz, Decz, Encspt, Dect, Encspctrl, Enpc, Enir, MEM_Read, Enmactimer, CSPC_out;
-	sc_signal<sc_uint<3> > S, CSPSelmux_1;
+	sc_signal< sc_uint<3> > S, CSPSelmux_1;
 	sc_signal< sc_uint<2> > CSPSelmux_2;
 	sc_signal< sc_uint<8> > CSPX_out, CSPY_out, CSPZ_out, CSPT_out, CSPCTRL_out, CSPPC_out, CSPIR_out, RFST_out, CSPMux_1_out,
 		Memory_out, CSPR_out, OFECou;
@@ -40,9 +40,9 @@ int sc_main(int, char**){
 	Control.Instruction(CSPIR_out);
 	Control.MUX(MUX);
 	Control.C_out(CSPC_out);
-
+	
 	Control.i(i);
-	Control.Encspx(Encspx);
+	/*Control.Encspx(Encspx);
 	Control.Encspy(Encspy);
 	Control.Incy(Incy);
 	Control.Decy(Decy);
@@ -66,7 +66,7 @@ int sc_main(int, char**){
 	Control.flush_tx(flush_tx);
 	Control.Rxon(Rxon);
 	Control.Rxoff(Rxoff);
-	Control.flush_rx(flush_rx);
+	Control.flush_rx(flush_rx);*/
 
 
 	driver d("driver");
