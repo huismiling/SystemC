@@ -10,13 +10,14 @@ SC_MODULE (CSPTOP) {
 	sc_in< sc_uint<8> > RFST_in;
 	sc_in< sc_uint<16> > Random_in;
 	sc_out<bool> Txcaln, Txon, Txoncca, ackset, Txoff, flush_tx, Rxon, Rxoff, flush_rx;
-	sc_out< sc_uint<8> > MUX;
+	sc_out< sc_uint<8> > CSPIR_out, MUX;
 	sc_out< sc_uint<32> > i;
+	sc_out<sc_uint<4> > W;
 
 	sc_signal<bool> Encspx, Encspy, Incy, Decy, Encspz, Decz, Encspt, Dect, Encspctrl, Enpc, Enir, MEM_Read, Enmactimer, CSPC_out;
 	sc_signal<sc_uint<3> > S, CSPSelmux_1;
 	sc_signal< sc_uint<2> > CSPSelmux_2;
-	sc_signal< sc_uint<8> > CSPX_out, CSPY_out, CSPZ_out, CSPT_out, CSPCTRL_out, CSPPC_out, CSPIR_out, RFST_out, CSPMux_1_out,
+	sc_signal< sc_uint<8> > CSPX_out, CSPY_out, CSPZ_out, CSPT_out, CSPCTRL_out, CSPPC_out, RFST_out, CSPMux_1_out,
 							Memory_out, CSPR_out, OFECou;
 
 	void topmethod();
@@ -150,6 +151,7 @@ SC_MODULE (CSPTOP) {
 		Control.MUX(MUX);
 		Control.C_out(CSPC_out);
 
+		Control.W(W);
 		Control.i(i);
 		Control.Encspx(Encspx);
 		Control.Encspy(Encspy);

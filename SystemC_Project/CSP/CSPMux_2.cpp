@@ -10,7 +10,7 @@ void CSPMux_2::prc_CSPMux_2(){ /* Line 3 */
 		break;
 	case 2:CSPMux_2_Data=CSPR_out.read();
 		break;
-	default:CSPMux_2_Data="0xZZ";
+	default:CSPMux_2_Data="0xFF";
 	}
 	CSPMux_2_out=CSPMux_2_Data;
 }

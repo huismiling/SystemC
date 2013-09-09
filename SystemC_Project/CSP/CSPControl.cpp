@@ -3,7 +3,7 @@
 void CSPControl::prc_CSPControl1(){ /* Line 3 */
 	if(Rst)
 	{
-		W="0001";
+		W="1000";
 	}
 	else
 	{
@@ -66,7 +66,7 @@ void CSPControl::prc_CSPControl2(){
 					if(C_out)
 						i=("000000000000",TMP.range(6,4),"01110110000000000");
 					else
-						i="0x0000EC000";
+						i="0x0000EC00";
 				} 
 				else if(TMP.range(7,5)==4)
 				{
@@ -154,8 +154,8 @@ void CSPControl::prc_CSPControl2(){
 				{
 					if(MUX.read()<TMP.range(2,0))
 						i="0x0800EC00";
-					else
-						i="0x0000EC00";
+					//else
+						//i="0x0000EC00";
 				}
 			}//W[3]
 		}

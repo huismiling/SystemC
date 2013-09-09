@@ -4,10 +4,11 @@
 
 int sc_main(int, char**){
 	sc_signal<bool> Clk, Rst, Tx_Active, CCA_Active;
-	sc_signal< sc_uint<8> > RFST_in, MUX;
+	sc_signal< sc_uint<8> > RFST_in, MUX, Instruction;
 	sc_signal< sc_uint<16> >Random_in;
 	sc_signal<bool> Txcaln, Txon, Txoncca, ackset, Txoff, flush_tx, Rxon, Rxoff, flush_rx;
 	sc_signal< sc_uint<32> > i;
+	sc_signal<sc_uint<4> > W;
 
 	/*sc_signal<bool> Encspx, Encspy, Incy, Decy, Encspz, Decz, Encspt, Dect, Encspctrl, Enpc, Enir, MEM_Read, Enmactimer, CSPC_out;
 	sc_signal< sc_uint<3> > S, CSPSelmux_1;
@@ -23,6 +24,8 @@ int sc_main(int, char**){
 	DUT.RFST_in(RFST_in);
 	DUT.Random_in(Random_in);
 
+	DUT.CSPIR_out(Instruction);
+	DUT.W(W);
 	DUT.MUX(MUX);
 	DUT.i(i);
 	DUT.Txcaln(Txcaln);
@@ -89,8 +92,11 @@ int sc_main(int, char**){
 	sc_trace(tf,DUT.Tx_Active, "Tx_Active");
 	sc_trace(tf,DUT.CCA_Active, "CCA_Active");
 	sc_trace(tf,DUT.RFST_in, "RFST_in");
-	sc_trace(tf,DUT.MUX, "MUX");
 	sc_trace(tf,DUT.Random_in, "Random_in");
+
+	sc_trace(tf,DUT.CSPIR_out, "CSPIR_out");
+	sc_trace(tf,DUT.W, "W");
+	sc_trace(tf,DUT.MUX, "MUX");	
 	sc_trace(tf,DUT.i, "i");
 	sc_trace(tf,DUT.Txcaln, "Txcaln");
 	sc_trace(tf,DUT.Txon, "Txon");

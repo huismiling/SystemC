@@ -18,7 +18,7 @@ void CSPMux_1::prc_CSPMux_1(){ /* Line 3 */
 		break;
 	case 6:CSPMux_1_out=CSPX_out.read();
 		break;
-	default:CSPMux_1_out="0xZZ";
+	default:CSPMux_1_out="0xFF";
 	}
 	//CSPMux_1_out=CSPMux_1_Data;
 }

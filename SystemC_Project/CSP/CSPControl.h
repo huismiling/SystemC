@@ -12,7 +12,8 @@ SC_MODULE (CSPControl) {
 	sc_out<bool> Txcaln, Txon, Txoncca, ackset, Txoff, flush_tx, Rxon, Rxoff, flush_rx;
 	sc_out< sc_uint<32> > i;
 
-	sc_signal<sc_uint<4> > W;
+	sc_out<sc_uint<4> > W;
+
 	sc_signal<bool> Clk_en;
 	sc_signal<bool> S_IS;
 
