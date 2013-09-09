@@ -9,11 +9,11 @@ void driver::prc_driver () {
 	Rst=1;
 	OFECou=3;
 	MUX=4;
-	cou=0;
+	//cou=0;
 	wait (10, SC_NS);
 	Rst=0;
 	Clk=0;
-	CSPIR_out=0xE0;
+	//CSPIR_out=0xE0;
 	wait (5, SC_NS);
 	//d_out8=0;//rand()%256;
 	while (1) {
@@ -21,12 +21,12 @@ void driver::prc_driver () {
 		wait (5, SC_NS);
 		Clk=!Clk;
 		wait (5, SC_NS);
-		C_out=rand()%2;
-		//Tx_Active=rand()%2;
-		//CCA_Active=rand()%2;
-		//Random_in=rand()&0xFFFF;
-		cou++;
-		CSPIR_out=MEM_Data[cou/4];
+		C_out=0;
+		Tx_Active=rand()%2;
+		CCA_Active=rand()%2;
+		Random_in=rand()&0xFFFF;
+		//cou++;
+		//CSPIR_out=MEM_Data[cou/4];
 		//Inc=rand()%2;
 		//Dec=rand()%2;
 		//En=rand()%2;

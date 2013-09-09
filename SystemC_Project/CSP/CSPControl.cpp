@@ -21,17 +21,17 @@ void CSPControl::prc_CSPControl2(){
 	if(Rst)
 	{
 		i="0x00010400";
-		S_IS="1";
-		Clk_en="0";
+		S_IS=1;
+		Clk_en=0;
 	}
 	else
 	{
-		if(S_IS)
+		if(S_IS==1)
 		{
 			switch(TMP)
 			{
 				case 0xE0:
-					S_IS="0";
+					S_IS=0;
 					i="0x0000EC00";
 					break;
 				case 0xE1:
@@ -61,7 +61,7 @@ void CSPControl::prc_CSPControl2(){
 				i="0x0003E000";
 			else if(W.read()&0x04)
 			{
-				if (TMP[7])
+				if (TMP[7]==0)
 				{
 					if(C_out)
 						i=("000000000000",TMP.range(6,4),"01110110000000000");
@@ -159,30 +159,30 @@ void CSPControl::prc_CSPControl2(){
 				}
 			}//W[3]
 		}
-		/*Encspx		=i[29];
-		Encspy		=i[28];
-		Incy		=i[27];
-		Decy		=i[26];
-		Encspz		=i[25];
-		Decz		=i[24];
-		Encspt		=i[23];
-		Dect		=i[22];
-		Encspctrl	=i[21];
-		Enpc		=i[20];
+		Encspx		=i.read()[29];
+		Encspy		=i.read()[28];
+		Incy		=i.read()[27];
+		Decy		=i.read()[26];
+		Encspz		=i.read()[25];
+		Decz		=i.read()[24];
+		Encspt		=i.read()[23];
+		Dect		=i.read()[22];
+		Encspctrl	=i.read()[21];
+		Enpc		=i.read()[20];
 		S			=i.read().range(19,17);//(i[19],i[18],i[17]);
-		Enir		=i[16];
+		Enir		=i.read()[16];
 		Selmux_1	=i.read().range(15,13);
-		MEM_Read	=i[12];
+		MEM_Read	=i.read()[12];
 		Selmux_2	=i.read().range(11,10);
-		Enmactimer	=i[9];
-		Txcaln		=i[8];
-		Txon		=i[7];
-		Txoncca		=i[6];
-		ackset		=i[5];
-		Txoff		=i[4];
-		flush_tx	=i[3];
-		Rxon		=i[2];
-		Rxoff		=i[1];
-		flush_rx	=i[0];*/
+		Enmactimer	=i.read()[9];
+		Txcaln		=i.read()[8];
+		Txon		=i.read()[7];
+		Txoncca		=i.read()[6];
+		ackset		=i.read()[5];
+		Txoff		=i.read()[4];
+		flush_tx	=i.read()[3];
+		Rxon		=i.read()[2];
+		Rxoff		=i.read()[1];
+		flush_rx	=i.read()[0];
 	}
 }

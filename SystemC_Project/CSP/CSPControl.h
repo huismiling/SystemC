@@ -6,15 +6,15 @@
 SC_MODULE (CSPControl) {
 	sc_in<bool> Clk, Rst, C_out;
 	sc_in< sc_uint<8> > OFECou, Instruction, MUX;
-	//sc_out<bool> Encspx, Encspy, Incy, Decy, Encspz, Decz, Encspt, Dect, Encspctrl, Enpc, Enir, MEM_Read, Enmactimer;
-	//sc_out< sc_uint<3> > S, Selmux_1;
-	//sc_out< sc_uint<2> > Selmux_2;
-	//sc_out<bool> Txcaln, Txon, Txoncca, ackset, Txoff, flush_tx, Rxon, Rxoff, flush_rx;
+	sc_out<bool> Encspx, Encspy, Incy, Decy, Encspz, Decz, Encspt, Dect, Encspctrl, Enpc, Enir, MEM_Read, Enmactimer;
+	sc_out< sc_uint<3> > S, Selmux_1;
+	sc_out< sc_uint<2> > Selmux_2;
+	sc_out<bool> Txcaln, Txon, Txoncca, ackset, Txoff, flush_tx, Rxon, Rxoff, flush_rx;
 	sc_out< sc_uint<32> > i;
 
 	sc_signal<sc_uint<4> > W;
-	sc_bit Clk_en;
-	sc_bit S_IS;
+	sc_signal<bool> Clk_en;
+	sc_signal<bool> S_IS;
 
 	void prc_CSPControl1 ();
 	void prc_CSPControl2 ();
