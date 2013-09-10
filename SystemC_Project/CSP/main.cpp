@@ -3,12 +3,14 @@
 #include "IncludeFiles.h"
 
 int sc_main(int, char**){
-	sc_signal<bool> Clk, Rst, Tx_Active, CCA_Active;
+	sc_signal<bool> Clk, Rst, Tx_Active, CCA_Active, MEM_Read;
 	sc_signal< sc_uint<8> > RFST_in, MUX, Instruction;
 	sc_signal< sc_uint<16> >Random_in;
 	sc_signal<bool> Txcaln, Txon, Txoncca, ackset, Txoff, flush_tx, Rxon, Rxoff, flush_rx;
 	sc_signal< sc_uint<32> > i;
-	sc_signal<sc_uint<4> > W;
+	sc_signal< sc_uint<4> > W;
+	sc_signal< sc_uint<3> > CSPSelmux_1;
+	sc_signal< sc_uint<2> > CSPSelmux_2;
 
 	/*sc_signal<bool> Encspx, Encspy, Incy, Decy, Encspz, Decz, Encspt, Dect, Encspctrl, Enpc, Enir, MEM_Read, Enmactimer, CSPC_out;
 	sc_signal< sc_uint<3> > S, CSPSelmux_1;
@@ -37,6 +39,10 @@ int sc_main(int, char**){
 	DUT.Rxon(Rxon);
 	DUT.Rxoff(Rxoff);
 	DUT.flush_rx(flush_rx);
+
+	DUT.CSPSelmux_2(CSPSelmux_2);
+	DUT.CSPSelmux_1(CSPSelmux_1);
+	DUT.MEM_Read(MEM_Read);
 /*	
 	Control.Clk(Clk);
 	Control.Rst(Rst);
@@ -94,10 +100,6 @@ int sc_main(int, char**){
 	sc_trace(tf,DUT.RFST_in, "RFST_in");
 	sc_trace(tf,DUT.Random_in, "Random_in");
 
-	sc_trace(tf,DUT.CSPIR_out, "CSPIR_out");
-	sc_trace(tf,DUT.W, "W");
-	sc_trace(tf,DUT.MUX, "MUX");	
-	sc_trace(tf,DUT.i, "i");
 	sc_trace(tf,DUT.Txcaln, "Txcaln");
 	sc_trace(tf,DUT.Txon, "Txon");
 	sc_trace(tf,DUT.Txoncca, "Txoncca");
@@ -107,6 +109,14 @@ int sc_main(int, char**){
 	sc_trace(tf,DUT.Rxon, "Rxon");
 	sc_trace(tf,DUT.Rxoff, "Rxoff");
 	sc_trace(tf,DUT.flush_rx, "flush_rx");
+
+	sc_trace(tf,DUT.MUX, "MUX");	
+	sc_trace(tf,DUT.i, "i");
+	sc_trace(tf,DUT.W, "W");
+	sc_trace(tf,DUT.MEM_Read, "MEM_Read");
+	sc_trace(tf,DUT.CSPIR_out, "CSPIR_out");
+	sc_trace(tf,DUT.CSPSelmux_1, "CSPSelmux_1");
+	sc_trace(tf,DUT.CSPSelmux_2, "CSPSelmux_2");
 	
 /*
 	sc_trace_file *tf = sc_create_vcd_trace_file("CSPControl");

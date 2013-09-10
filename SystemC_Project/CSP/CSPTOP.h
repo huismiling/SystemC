@@ -9,14 +9,15 @@ SC_MODULE (CSPTOP) {
 	sc_in<bool> Tx_Active, CCA_Active;
 	sc_in< sc_uint<8> > RFST_in;
 	sc_in< sc_uint<16> > Random_in;
-	sc_out<bool> Txcaln, Txon, Txoncca, ackset, Txoff, flush_tx, Rxon, Rxoff, flush_rx;
+	sc_out<bool> MEM_Read, Txcaln, Txon, Txoncca, ackset, Txoff, flush_tx, Rxon, Rxoff, flush_rx;
 	sc_out< sc_uint<8> > CSPIR_out, MUX;
 	sc_out< sc_uint<32> > i;
 	sc_out<sc_uint<4> > W;
 
-	sc_signal<bool> Encspx, Encspy, Incy, Decy, Encspz, Decz, Encspt, Dect, Encspctrl, Enpc, Enir, MEM_Read, Enmactimer, CSPC_out;
-	sc_signal<sc_uint<3> > S, CSPSelmux_1;
-	sc_signal< sc_uint<2> > CSPSelmux_2;
+	sc_signal<bool> Encspx, Encspy, Incy, Decy, Encspz, Decz, Encspt, Dect, Encspctrl, Enpc, Enir, Enmactimer, CSPC_out;
+	sc_signal<sc_uint<3> > S;
+	sc_out<sc_uint<3> > CSPSelmux_1;
+	sc_out< sc_uint<2> > CSPSelmux_2;
 	sc_signal< sc_uint<8> > CSPX_out, CSPY_out, CSPZ_out, CSPT_out, CSPCTRL_out, CSPPC_out, RFST_out, CSPMux_1_out,
 							Memory_out, CSPR_out, OFECou;
 
@@ -179,8 +180,6 @@ SC_MODULE (CSPTOP) {
 		Control.Rxoff(Rxoff);
 		Control.flush_rx(flush_rx);
 
-		SC_METHOD(topmethod)
-			sensitive_pos<< Clk <<Rst;
 	}
 };
 
