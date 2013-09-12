@@ -16,7 +16,6 @@ void CSPControl::prc_CSPControl1(){ /* Line 3 */
 
 void CSPControl::prc_CSPControl2(){ 
 	sc_uint<8> TMP;
-	sc_uint<32> iTMP;
 	TMP=Instruction.read();
 	if(Rst)
 	{
@@ -160,7 +159,7 @@ void CSPControl::prc_CSPControl2(){
 			}//W[3]
 		}
 	}
-		iTMP=i.read();
+		/*iTMP=i.read();
 		Encspx		=iTMP[29];
 		Encspy		=iTMP[28];
 		Incy		=iTMP[27];
@@ -185,5 +184,36 @@ void CSPControl::prc_CSPControl2(){
 		flush_tx	=iTMP[3];
 		Rxon		=iTMP[2];
 		Rxoff		=iTMP[1];
-		flush_rx	=iTMP[0];
+		flush_rx	=iTMP[0];*/
+}
+
+void CSPControl::prc_CSPControl3(){ 
+	sc_uint<32> iTMP;
+
+	iTMP=i.read();
+	Encspx		=iTMP[29];
+	Encspy		=iTMP[28];
+	Incy		=iTMP[27];
+	Decy		=iTMP[26];
+	Encspz		=iTMP[25];
+	Decz		=iTMP[24];
+	Encspt		=iTMP[23];
+	Dect		=iTMP[22];
+	Encspctrl	=iTMP[21];
+	Enpc		=iTMP[20];
+	S			=iTMP.range(19,17);//(i[19],i[18],i[17]);
+	Enir		=iTMP[16];
+	Selmux_1	=iTMP.range(15,13);
+	MEM_Read	=iTMP[12];
+	Selmux_2	=iTMP.range(11,10);
+	Enmactimer	=iTMP[9];
+	Txcaln		=iTMP[8];
+	Txon		=iTMP[7];
+	Txoncca		=iTMP[6];
+	ackset		=iTMP[5];
+	Txoff		=iTMP[4];
+	flush_tx	=iTMP[3];
+	Rxon		=iTMP[2];
+	Rxoff		=iTMP[1];
+	flush_rx	=iTMP[0];
 }

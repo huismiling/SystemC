@@ -19,6 +19,7 @@ SC_MODULE (CSPControl) {
 
 	void prc_CSPControl1 ();
 	void prc_CSPControl2 ();
+	void prc_CSPControl3 ();
 
 	SC_CTOR (CSPControl) {
 		SC_METHOD (prc_CSPControl1);
@@ -27,6 +28,9 @@ SC_MODULE (CSPControl) {
 		SC_METHOD (prc_CSPControl2);
 		sensitive_neg << Clk;
 		sensitive_pos << Rst;
+
+		SC_METHOD (prc_CSPControl3);
+		sensitive <<i;
 	}
 };
 
